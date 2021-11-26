@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body id="body">
+    <section class="header">
+        <div class="nav-links">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="#">About Us</a></li>
+                    <li> <a href="#">Assessment</a></li>
+                    <li> <a href="#">Contact Us</a></li>
+                    <li><a href="logsign.html">Login/Signup</a></li>
+                </ul>
+            </nav>
+            <p class="menu"><img src="images/menu.png" class="menu-icon" onclick="toggleMenu()" ></p>
+            
+
+            <!-- login signup form -->
+        </div>
+        <div class="login-page">
+            <div class="box">
+                <div class="left">
+                    <h3>Create Account</h3>
+                    <button type="button" class="register-btn">Register</button>
+                </div>
+                <div class="right">
+                    <h3>Have an Account ?</h3>
+                    <button type="button" class="login-btn">Login</button>
+                </div>
+                <div class="form">
+                    <!-- Login form Start -->
+                    <div class="login-form">
+                        <h3>Log In</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Email Address*" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password*" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                 <input type="checkbox"> Remember Me
+                             </label>
+                        </div>
+                        <button type="button" class="submit-btn">Login</button>
+                        <p><a href="#" class="register-btn">Register</a> | <a href="#" class="lost-pass-btn">Lost Your Password ?</a></p>
+                    </div>
+                    <!-- Login form End -->
+
+                    <!-- Register form Start -->
+                    <div class="register-form form-hidden">
+                        <h3>Register</h3>
+                        <div class="form-group1">
+                            <input type="text" placeholder="Name*" class="form-control" required="">
+                        </div>
+                        <div class="form-group1">
+                            <input type="text" placeholder="Enrollment no.*" class="form-control" required="">
+                        </div>
+                        <div class="form-group1">
+                            <input type="text" placeholder="Email Address*" class="form-control" required="">
+                        </div>
+
+                        <div class="form-group1">
+                            <select name="clg" class="form-control">
+                                <option selected disabled>College</option>
+                                <option value="Nsut">Nsut</option>
+                                <option value="Nsut West Campus">Nsut West Campus</option>
+                                <option value="Nsut East Campus">Nsut East Campus</option>
+                                <!-- <option value="Ipu">Ipu</option> -->
+                              </select>
+                        </div>
+
+
+
+                        <div class="form-group1">
+                            <select name="brch" class="form-control">
+                                <option selected disabled>Branch</option>
+                                <option value="Information technology">Information technology</option>
+                                <option value="Civil">Civil</option>
+                                <option value="Mechanical">Mechanical</option>
+                                <option value="Electronics">Electronics</option>
+                              </select>
+                        </div>
+
+                        <div class="form-group1">
+                            <input type="password" placeholder="Password*" class="form-control">
+                        </div>
+
+                        <div class="form-group1">
+                            <input type="password" placeholder="Confirm Password*" class="form-control" required="">
+
+                        </div>
+
+
+
+                        <button type="button" class="submit-btn">Register</button>
+                        <p><a href="#" class="login-btn">Login</a> | <a href="#" class="lost-pass-btn">Lost Your Password ?</a></p>
+                    </div>
+                    <!-- Register form End -->
+
+                    <!-- Lost Password form Start -->
+                    <div class="lost-password-form form-hidden">
+                        <h3 id="lost">Lost Your Password ?</h3>
+                        <h5>You will receive a link to create a new password via email.</h5>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Email Address*" class="form-control">
+                        </div>
+
+
+                        <button type="button" class="submit-btn">Reset Password</button>
+                        <p><a href="#" class="login-btn">Login</a> | <a href="#" class="register-btn">Register</a></p>
+                    </div>
+                    <!-- Lost Password form End -->
+
+                </div>
+            </div>
+        </div>
+        <!-- end login signup form -->
+        <!-- JavaScript for toggle menu -->
+        <script>
+            var menuList=document.getElementById("menuList");
+            menuList.style.maxHeight="0px";
+            function toggleMenu(){
+     
+                if(menuList.style.maxHeight=="0px"){
+                 menuList.style.maxHeight="200px";
+                }else{
+                 menuList.style.maxHeight="0px";
+                }
+            }
+     
+        </script>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

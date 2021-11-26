@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+</head>
+
+<body id="body">
+    <section class="header">
+        <div class="nav-links">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="#">About Us</a></li>
+                    <li> <a href="#">Assessment</a></li>
+                    <li> <a href="#">Contact Us</a></li>
+                    <li><a href="logsign.html">Login/Signup</a></li>
+                    
+                </ul>
+                
+            </nav>
+            <p class="menu"><img src="images/menu.png" class="menu-icon" onclick="toggleMenu()" ></p>
+            
+
+        </div>
+        <center>
+            <div class="text-area">
+                <h1 id="parag">World's Best Platform</h1>
+                <p id="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum et quia dolore sed ex magnam quaerat quisiure blanditiis harum incidunt aperiam, quos, nam eos facere? Eaque voluptas sed itaque?</p>
+                <p id="para1"><a class="visit" href="#">Visit Us to Know More</a></p>
+            </div>
+        </center>
+        <!-- JavaScript for toggle menu -->
+        <script>
+            var menuList=document.getElementById("menuList");
+            menuList.style.maxHeight="0px";
+            function toggleMenu(){
+     
+                if(menuList.style.maxHeight=="0px"){
+                 menuList.style.maxHeight="200px";
+                }else{
+                 menuList.style.maxHeight="0px";
+                }
+            }
+     
+        </script>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
