@@ -6,7 +6,7 @@
 }
 
 .header {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url('/images/look.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(images/look.jpg);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -179,7 +179,7 @@ nav {
 }
 
 .login-page .box {
-    background-image: url('/images/texturebg.jpg');
+    background-image: url(images/texturebg.jpg);
     background-size: cover;
     background-position: -160px center;
     background-repeat: repeat-x;
